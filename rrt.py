@@ -36,33 +36,6 @@ class RRTStar:
         self.node_list = []
         self.node_list.append(self.start)
 
-    def planning(self, animation=True, search_until_max_iter=True):
-        for i in range(self.max_iter):  # Limits the max number of iterations
-            rnd = self.get_random_point()  # Gets a random point to calculate
-            nind = self.get_nearest_list_index(self.node_list, rnd)  #
-            nearest_node = self.node_list[nind]
-
-            theta = np.arctan2(rnd[1] - nearest_node.y, rnd[0] - nearest_node.x)
-            new_node = self.steer(nearest_node, theta, self.expand_dis)
-            if self.check_collision(new_node):
-                near_indices = self.find_near_nodes(new_node)
-                new_node = self.choose_parent(new_node, near_indices)
-                if new_node:
-                    self.node_list.append(new_node)
-                    self.rewire(new_node, near_indices)
-
-            if animation and i % 5 == 0:
-                self.draw_graph(rnd)
-
-            if not search_until_max_iter:
-                if (
-                    self.calc_dist_to_goal(self.node_list[-1].x, self.node_list[-1].y)
-                    <= self.expand_dis
-                ):
-                    return self.generate_final_course(len(self.node_list) - 1)
-
-        return None  # When the search is failed
-
     def steer(self, from_node, to_theta, distance):
         x = from_node.x + distance * np.cos(to_theta)
         y = from_node.y + distance * np.sin(to_theta)

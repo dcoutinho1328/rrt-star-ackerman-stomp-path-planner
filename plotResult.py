@@ -23,9 +23,9 @@ if __name__ == "__main__":
     )
     path = rrt_star.run_rrt_star()
     if path is None:
-        print("Não foi possível encontrar o caminho")
+        print("Couldn't find the path")
     else:
-        print("Caminho encontrado")
+        print("Path found")
         path = np.array(path)
         plt.plot(path[:, 0], path[:, 1], "-r")
 
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         if node.rewired:
             rewire_count += 1
 
-    print("Número de rewires:", rewire_count)
+    print("Rewire count:", rewire_count)
     plt.plot(rrt_star.start.x, rrt_star.start.y, "xr")
     plt.plot(rrt_star.goal.x, rrt_star.goal.y, "xb")
     plt.grid(True)
