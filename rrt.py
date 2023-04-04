@@ -1,8 +1,16 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import random
-from shapely import LineString, Point
-from os import system
+import matplotlib.pyplot as plt
+from shapely import LineString, Point, Polygon
+import math
+        
+class Vehicle:
+
+    def __init__ (self, width, length, max_steering_angle, collision_padding=1):
+        self.width = width
+        self.length = length
+        self.max_steering_angle = max_steering_angle
+        self.collision_padding = collision_padding
 
 
 class Node:
@@ -21,20 +29,25 @@ class RRTStar:
         start,
         goal,
         obstacle_list,
+        vehicle,
         rand_area,
         expand_dis=0.3,
         goal_sample_rate=5,
         max_iter=500,
+        search_radius_param=5
     ):
         self.start = start
         self.goal = goal
         self.obstacle_list = obstacle_list
+        self.vehicle = vehicle
+        self.growObstacles()
         self.rand_area = rand_area
         self.expand_dis = expand_dis
         self.goal_sample_rate = goal_sample_rate
         self.max_iter = max_iter
         self.node_list = []
         self.node_list.append(self.start)
+        self.search_radius_param = search_radius_param
 
     def steer(self, from_node, to_theta, distance):
         x = from_node.x + distance * np.cos(to_theta)
@@ -48,18 +61,22 @@ class RRTStar:
         if n2 is not None:
             line = LineString([[n1.x, n1.y], [n2.x, n2.y]])
 
-            for o in self.obstacle_list:
+            for o in self.grown_obstacles:
                 if o.intersects(line):
                     return False  # collision
 
         else:
             point = Point((n1.x, n1.y))
 
-            for o in self.obstacle_list:
+            for o in self.grown_obstacles:
                 if o.intersects(point):
                     return False
 
         return True
+
+    def checkSteering(self, n1, n2):
+        theta = np.arctan2(n2.y - n1.y, n2.x - n1.x)
+        return abs(theta - n1.yaw) <= self.vehicle.max_steering_angle
 
     def get_random_point(self):
         if random.randint(0, 100) > self.goal_sample_rate:
@@ -71,6 +88,15 @@ class RRTStar:
             rnd = [self.goal.x, self.goal.y]
 
         return rnd
+
+    def growObstacles(self):
+
+        self.grown_obstacles = []
+
+        for obs in self.obstacle_list:
+            gp = Polygon(obs.buffer(math.sqrt(self.vehicle.width**2 + self.vehicle.length**2) + self.vehicle.collision_padding))
+            self.grown_obstacles.append(gp)
+            
 
     def get_nearest_list_index(self, node_list, rnd):
         dlist = [(node.x - rnd[0]) ** 2 + (node.y - rnd[1]) ** 2 for node in node_list]
@@ -100,13 +126,14 @@ class RRTStar:
         if nnode == 1:
             return [0]
         # The formula for 'r' is proposed by the original RRT* algorithm
-        # The radius grow as the number of nodes grow
-        r = 5 * np.sqrt((np.log(nnode) / nnode))
+        # The radius decrease as the number of nodes grow
+        r = self.search_radius_param * np.sqrt((np.log(nnode) / nnode))
         dlist = [
             (node.x - new_node.x) ** 2 + (node.y - new_node.y) ** 2
             for node in self.node_list
         ]
         near_indices = [dlist.index(i) for i in dlist if i <= r**2]
+        # print(near_indices)
         return near_indices
 
     def choose_parent(self, new_node, near_indices):
@@ -118,6 +145,8 @@ class RRTStar:
             for i in near_indices
         ]
         minind = near_indices[dlist.index(min(dlist))]
+        # if not self.checkSteering(self.node_list[minind], new_node):
+        #     return None
         new_node.parent_idx = minind
         p_node = self.node_list[minind]
         added_cost = self.line_distance(new_node, p_node)
@@ -138,10 +167,11 @@ class RRTStar:
             line_dist = self.line_distance(near_node, new_node)
 
             if near_node.cost > new_node.cost + line_dist:
-                if self.check_collision(near_node, new_node):
+                if self.check_collision(near_node, new_node) and self.checkSteering(new_node, near_node):
                     prev_cost = near_node.cost
                     near_node.parent_idx = len(self.node_list) - 1
                     near_node.cost = new_node.cost + line_dist
+                    new_node.yaw = np.arctan2(near_node.y - new_node.y, near_node.x - new_node.x)
                     near_node.rewired = True
 
                     # Propagate cost changes to descendants
@@ -178,6 +208,19 @@ class RRTStar:
                 if self.check_collision(final_node, self.node_list[goal_ind]):
                     return self.generate_final_course(goal_ind)
 
+
+            if True:
+                final_node = self.node_list[-1]
+                goal_ind = self.get_nearest_list_index(
+                    self.node_list, [self.goal.x, self.goal.y]
+                )
+                if self.check_collision(final_node, self.node_list[goal_ind]):
+                    var = self.generate_final_course(goal_ind)
+                    path = np.array(var)
+
+
+
             if len(self.node_list) > self.max_iter:
                 print("Reached Maximum Iterations")
                 return None
+
