@@ -74,9 +74,130 @@ class RRTStar:
 
         return True
 
-    def checkSteering(self, n1, n2):
-        theta = np.arctan2(n2.y - n1.y, n2.x - n1.x)
-        return abs(theta - n1.yaw) <= self.vehicle.max_steering_angle
+    def check_collision_coords(self, p1, p2):
+        line = LineString([p1, p2])
+
+        for o in self.grown_obstacles:
+            if o.intersects(line):
+                return False  # collision
+
+        return True
+
+    def GPC(self, path, max_length=5):
+
+        c = []
+        new_path = []
+
+        for i in range(len(path) - 1):
+            s, e = path[i], path[i + 1]
+            d = np.sqrt((s[0] - e[0])**2 + (s[1] - e[1])**2)
+            new_path.append(s)
+            if d > max_length:
+                n = int(np.ceil(d/max_length))
+                new_x = np.linspace(s[0], e[0], n + 1).tolist()[1:-1]
+                new_y = np.linspace(s[1], e[1], n + 1).tolist()[1:-1]
+                for i in range(len(new_x)):
+                    new_path.append([new_x[i], new_y[i], e[2]])
+
+        new_path.append(path[-1])
+
+        for i in range(len(new_path) - 1):
+            s, e = new_path[i], new_path[i + 1]
+            d = np.sqrt((s[0] - e[0])**2 + (s[1] - e[1])**2)
+            A = np.array([
+                [1, s[0], s[0]**2, s[0]**3],
+                [1, e[0], e[0]**2, e[0]**3],
+                [0, 1, 2*s[0], 3*s[0]**2],
+                [0, 1, 2*e[0], 3*e[0]**2]
+            ])
+
+            B = np.array([s[1], e[1], np.tan(s[2]), np.tan(e[2])]).T
+
+            X = np.linalg.solve(A, B).T
+        
+            coef = X.tolist()
+            c.append({
+                "c": coef,
+                "s": s,
+                "e": e
+            })
+
+        return c, new_path
+
+    def applyPol(self, coefs):
+
+        x = []
+        y = []
+        
+        for c in coefs:
+            s, e = c['s'], c['e']
+            a1, a2, a3, a4 = c["c"]
+            tl = np.linspace(s[0], e[0], 100).tolist()
+            yt = list(map(lambda t: a1 + a2*t + a3*t**2 + a4*t**3, tl))
+            x = x + tl
+            y = y + yt
+            # for i in range(len(tl) - 1):
+            #     x.append(s_x)
+            #     y.append(s_y)
+            #     t = tl[i]
+            #     q = a1 + a2*t + a3*t*t + a4*t*t*t
+            #     s_x = s_x + step*np.cos(q)
+            #     s_y = s_y + step*np.sin(q)
+
+        return np.array(x), np.array(y)
+
+
+
+    def getPolynomialCoeficients(self, path, avg_velocity):
+
+        v = 0
+        c = []
+
+        for i in range(len(path) - 1):
+            s, e = path[i], path[i + 1]
+            d = np.sqrt((s[0] - e[0])**2 + (s[1] - e[1])**2)
+            t = d/avg_velocity + 5
+            vf = avg_velocity
+            if i == len(path) - 2:
+                vf = 0
+            A = np.array([[1,0,0,0], [0,1,0,0], [1, t, t**2, t**3], [0,1,2*t,3*t**2]])
+            B = np.array([s[2], v, e[2], vf]).T
+            X = np.linalg.solve(A, B).T
+            coef = X.tolist()
+            c.append({
+                "c": coef,
+                "t": t,
+                "s": s,
+                "e": e,
+                "d": d
+            })
+            v = avg_velocity
+
+        return c
+
+    def getPlotPoints(self, coefs):
+
+        x = []
+        y = []
+        
+        for c in coefs:
+            tl = np.linspace(0, c["t"], 1000).tolist()
+            step = c["d"]/99
+            a1, a2, a3, a4 = c["c"]
+            s_x, s_y, _ = c["s"]
+            for i in range(len(tl) - 1):
+                x.append(s_x)
+                y.append(s_y)
+                t = tl[i]
+                q = a1 + a2*t + a3*t*t + a4*t*t*t
+                s_x = s_x + step*np.cos(q)
+                s_y = s_y + step*np.sin(q)
+
+        return np.array(x), np.array(y)
+
+    # def checkSteering(self, n1, n2):
+    #     theta = np.arctan2(n2.y - n1.y, n2.x - n1.x)
+    #     return abs(theta - n1.yaw) <= self.vehicle.max_steering_angle
 
     def get_random_point(self):
         if random.randint(0, 100) > self.goal_sample_rate:
@@ -105,14 +226,14 @@ class RRTStar:
         return minind
 
     def generate_final_course(self, goal_ind):
-        path = [[self.goal.x, self.goal.y]]
+        path = [[self.goal.x, self.goal.y, self.goal.yaw]]
         node = self.node_list[goal_ind]
         count = 0
         while node.parent_idx is not None:
             count += 1
-            path.append([node.x, node.y])
+            path.append([node.x, node.y, node.yaw])
             node = self.node_list[node.parent_idx]
-        path.append([node.x, node.y])
+        path.append([node.x, node.y, node.yaw])
         return path
 
     def calc_dist_to_goal(self, x, y):
@@ -133,7 +254,6 @@ class RRTStar:
             for node in self.node_list
         ]
         near_indices = [dlist.index(i) for i in dlist if i <= r**2]
-        # print(near_indices)
         return near_indices
 
     def choose_parent(self, new_node, near_indices):
@@ -145,8 +265,6 @@ class RRTStar:
             for i in near_indices
         ]
         minind = near_indices[dlist.index(min(dlist))]
-        # if not self.checkSteering(self.node_list[minind], new_node):
-        #     return None
         new_node.parent_idx = minind
         p_node = self.node_list[minind]
         added_cost = self.line_distance(new_node, p_node)
@@ -167,7 +285,8 @@ class RRTStar:
             line_dist = self.line_distance(near_node, new_node)
 
             if near_node.cost > new_node.cost + line_dist:
-                if self.check_collision(near_node, new_node) and self.checkSteering(new_node, near_node):
+                # if self.check_collision(near_node, new_node) and self.checkSteering(new_node, near_node):
+                if self.check_collision(near_node, new_node):
                     prev_cost = near_node.cost
                     near_node.parent_idx = len(self.node_list) - 1
                     near_node.cost = new_node.cost + line_dist
@@ -181,6 +300,22 @@ class RRTStar:
                 goal_dist = self.calc_dist_to_goal(near_node.x, near_node.y)
                 if near_node.cost + goal_dist > new_node.cost + goal_dist:
                     return
+
+    def post_processing(self, final_course):
+        optimized = [final_course[0]]
+        last_index = 0
+        while last_index < len(final_course) - 1:
+            last_n = None
+            for n in final_course[last_index + 1:]:
+                if self.check_collision_coords(n[:2], optimized[-1][:2]):
+                    last_n = n
+            optimized.append(last_n)
+            last_index = final_course.index(last_n)
+        for i in range(len(optimized) - 2):
+            s, e = optimized[i], optimized[i + 1]
+            theta = np.arctan2(e[1] - s[1], e[0] - s[0])
+            optimized[i + 1][2] = theta
+        return optimized
 
     def run_rrt_star(self):
         while True:
@@ -206,17 +341,18 @@ class RRTStar:
                     self.node_list, [self.goal.x, self.goal.y]
                 )
                 if self.check_collision(final_node, self.node_list[goal_ind]):
-                    return self.generate_final_course(goal_ind)
+                    final_course = self.generate_final_course(goal_ind)
+                    return final_course # , self.post_processing(final_course)
 
 
-            if True:
-                final_node = self.node_list[-1]
-                goal_ind = self.get_nearest_list_index(
-                    self.node_list, [self.goal.x, self.goal.y]
-                )
-                if self.check_collision(final_node, self.node_list[goal_ind]):
-                    var = self.generate_final_course(goal_ind)
-                    path = np.array(var)
+            # if True:
+            #     final_node = self.node_list[-1]
+            #     goal_ind = self.get_nearest_list_index(
+            #         self.node_list, [self.goal.x, self.goal.y]
+            #     )
+            #     if self.check_collision(final_node, self.node_list[goal_ind]):
+            #         var = self.generate_final_course(goal_ind)
+            #         path = np.array(var)
 
 
 

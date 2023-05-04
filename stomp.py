@@ -16,7 +16,8 @@ def smooth_stomp(path, weight_data=0.1, weight_smooth=0.1, tolerance=0.00001):
                 new_val = new_path[i][j] + weight_data*(path[i][j] - new_path[i][j]) + \
                           weight_smooth*(new_path[i-1][j] + new_path[i+1][j] - (2.0 * new_path[i][j]))
                 new_path[i] = (new_path[i][0] if j == 1 else new_val,
-                               new_path[i][1] if j == 0 else new_val)
+                               new_path[i][1] if j == 0 else new_val,
+                               new_path[i][2])
                 change += abs(old_val - new_val)
 
 
