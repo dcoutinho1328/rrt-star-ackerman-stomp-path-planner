@@ -1,11 +1,11 @@
-from rrt import RRTStar, Node, Vehicle
-from stomp import smooth_stomp
+from old.rrt import RRTStar, Node, Vehicle
+from old.stomp import smooth_stomp
 import matplotlib.pyplot as plt
 import numpy as np
 import shapely
 
 if __name__ == "__main__":
-    vehicle = Vehicle(2, 3, 30*np.pi/180)
+    vehicle = Vehicle(2, 3, 30 * np.pi / 180)
     rand_area = [0, 80, 0, 80]
     obstacle_list = [
         ((20, 20), (12, 12), (10, 12)),
@@ -25,11 +25,13 @@ if __name__ == "__main__":
         max_iter=10000,
         goal_sample_rate=5,
         expand_dis=2,
-        search_radius_param=50
+        search_radius_param=50,
     )
 
     path = rrt_star.run_rrt_star()[::-1]
-    path2 = smooth_stomp(path=path, weight_data=0.1, weight_smooth=0.1, tolerance=0.00001)
+    path2 = smooth_stomp(
+        path=path, weight_data=0.1, weight_smooth=0.1, tolerance=0.00001
+    )
 
     if path is None:
         print("Couldn't find the path")
@@ -41,25 +43,23 @@ if __name__ == "__main__":
 
         coefs, op = rrt_star.GPC(optPath, 20)
         X, Y = rrt_star.applyPol(coefs)
-        
+
         path = np.array(path)
         optPath = np.array(optPath)
 
-        print(optPath)
-        # path2 = np.array(path2)
+        path2 = np.array(path2)
         plt.subplots()
         for o, o1 in zip(rrt_star.obstacle_list, rrt_star.grown_obstacles):
             plt.plot(*o.exterior.xy)
             plt.plot(*o1.exterior.xy)
         plt.plot(path[:, 0], path[:, 1], "-r")
         plt.plot(o_X, o_Y, "-m")
-        # plt.plot(path2[:, 0], path2[:, 1], "-b")
+        plt.plot(path2[:, 0], path2[:, 1], "-b")
 
         plt.subplots()
 
         plt.plot(optPath[:, 0], optPath[:, 1], "-g")
         plt.plot(X, Y, "-m")
-
 
     for o, o1 in zip(rrt_star.obstacle_list, rrt_star.grown_obstacles):
         plt.plot(*o.exterior.xy)
