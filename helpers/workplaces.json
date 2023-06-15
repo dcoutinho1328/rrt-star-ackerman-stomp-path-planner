@@ -1,0 +1,3242 @@
+[
+  {
+    "boundary": {
+      "coordinates": [
+        [
+          44.99927479210084,
+          45.004263337289565,
+          0
+        ],
+        [
+          44.99913785762606,
+          45.00449571795137,
+          0
+        ],
+        [
+          44.998675040532184,
+          45.0046418430057,
+          0
+        ],
+        [
+          44.9978868007884,
+          45.00463100749234,
+          0
+        ],
+        [
+          44.99724430569345,
+          45.004457844541356,
+          0
+        ],
+        [
+          44.99717990397361,
+          45.004101438219756,
+          0
+        ],
+        [
+          44.99767764387046,
+          45.00340229209371,
+          0
+        ],
+        [
+          44.99839467714559,
+          45.00333795435694,
+          0
+        ],
+        [
+          44.999027306453726,
+          45.003595539264666,
+          0
+        ],
+        [
+          44.99925281362737,
+          45.0039774863287,
+          0
+        ]
+      ],
+      "type": "MultiPoint"
+    },
+    "creation": "2023-05-27T19:02:51.306724",
+    "fill": {
+      "color": "#2573a6",
+      "opacity": 80
+    },
+    "finishingEvent": {
+      "key": "1",
+      "label": "WORKFLOW_MANEUVER_FINISHED"
+    },
+    "id": 1,
+    "modified": "2023-05-27T19:02:51.306724",
+    "name": "Workplace 1",
+    "pattern": {
+      "color": "#ffffff",
+      "opacity": 0
+    },
+    "spotGroups": [
+      {
+        "columnDistance": 1,
+        "creation": "2023-05-27T19:02:51.306724",
+        "fill": {
+          "color": "#FFFFFF",
+          "opacity": 90
+        },
+        "gridSequence": 1,
+        "gridType": {
+          "key": "1",
+          "label": "SQUARED"
+        },
+        "id": 1,
+        "label": {
+          "color": "#C4C4C4",
+          "opacity": 90
+        },
+        "length": 14,
+        "maneuverStrategy": {
+          "key": "1",
+          "label": "SPOTSTRATEGY_REVERSE_MANEUVER"
+        },
+        "maxSteeringAngle": 36,
+        "modified": "2023-05-27T19:02:51.306724",
+        "name": "Spot Group 1",
+        "order": 1,
+        "orderOrientation": {
+          "key": "2",
+          "label": "COUNTER_CLOCKWISE"
+        },
+        "parkOrientation": {
+          "key": "2",
+          "label": "BACK_TO_BACK"
+        },
+        "rowDistance": 1,
+        "spotHeading": 0,
+        "spotPadding": {
+          "back": 2.2,
+          "left": 2.2,
+          "right": 2.2,
+          "top": 2.2
+        },
+        "spotWorkflow": {
+          "key": "5",
+          "label": "EDGE"
+        },
+        "spots": [
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 1,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 1",
+            "order": 1,
+            "orientation": {
+              "heading": 247.31281509768235,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99913681881722,
+                45.00427118227883,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 2,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 2",
+            "order": 2,
+            "orientation": {
+              "heading": 247.31281509768235,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99907615634924,
+                45.00437412790535,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 3,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 3",
+            "order": 3,
+            "orientation": {
+              "heading": 203.99139110026294,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99889663045345,
+                45.00447634355362,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 4,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 4",
+            "order": 4,
+            "orientation": {
+              "heading": 203.99139110026294,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.998752938897574,
+                45.004521711238716,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 5,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 5",
+            "order": 5,
+            "orientation": {
+              "heading": 178.89021263050114,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99855060904002,
+                45.004552832797806,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 6,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 6",
+            "order": 6,
+            "orientation": {
+              "heading": 178.89021263050114,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.998393359163245,
+                45.004550671423885,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 7,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 7",
+            "order": 7,
+            "orientation": {
+              "heading": 178.89021263050114,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.998236109298304,
+                45.00454850983345,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 8,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 8",
+            "order": 8,
+            "orientation": {
+              "heading": 178.89021263050114,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99807885944519,
+                45.00454634802649,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 9,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 9",
+            "order": 9,
+            "orientation": {
+              "heading": 159.19824386168037,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99787713761876,
+                45.004535033076074,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 10,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 10",
+            "order": 10,
+            "orientation": {
+              "heading": 159.19824386168037,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99773011070206,
+                45.00449540717981,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 11,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 11",
+            "order": 11,
+            "orientation": {
+              "heading": 159.19824386168037,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99758308398807,
+                45.004455781094,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 12,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 12",
+            "order": 12,
+            "orientation": {
+              "heading": 159.19824386168037,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.9974360574768,
+                45.004416154818635,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 13,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 13",
+            "order": 13,
+            "orientation": {
+              "heading": 97.30511693530067,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99733327789495,
+                45.0042637778121,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 14,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 14",
+            "order": 14,
+            "orientation": {
+              "heading": 97.30511693530067,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.997313279521265,
+                45.00415310431846,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 15,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 15",
+            "order": 15,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99738407439516,
+                45.00400826096675,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 16,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 16",
+            "order": 16,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.997454980230316,
+                45.00390866441138,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 17,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 17",
+            "order": 17,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99752588581976,
+                45.003809067810245,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 18,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 18",
+            "order": 18,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.997596791163495,
+                45.00370947116335,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 19,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 19",
+            "order": 19,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.997667696261516,
+                45.003609874470676,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 20,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 20",
+            "order": 20,
+            "orientation": {
+              "heading": 63.20283703121726,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.997738601113824,
+                45.003510277732246,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 21,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 21",
+            "order": 21,
+            "orientation": {
+              "heading": 7.207983336497122,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99795733099801,
+                45.00346517603306,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 22,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 22",
+            "order": 22,
+            "orientation": {
+              "heading": 7.207983336497122,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99811336439023,
+                45.00345117556194,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 23,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 23",
+            "order": 23,
+            "orientation": {
+              "heading": 7.207983336497122,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99826939770644,
+                45.003437174877625,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 24,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 24",
+            "order": 24,
+            "orientation": {
+              "heading": -29.852611102665065,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.998487444287846,
+                45.00347636355503,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 25,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 25",
+            "order": 25,
+            "orientation": {
+              "heading": -29.852611102665065,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99862385180479,
+                45.00353190412013,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 26,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 26",
+            "order": 26,
+            "orientation": {
+              "heading": -29.852611102665065,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99876025958533,
+                45.00358744452176,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 27,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 27",
+            "order": 27,
+            "orientation": {
+              "heading": -29.852611102665065,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.998896667629474,
+                45.00364298475992,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 28,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 28",
+            "order": 28,
+            "orientation": {
+              "heading": -67.27296546024304,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99900203192336,
+                45.00377865424725,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 29,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 29",
+            "order": 29,
+            "orientation": {
+              "heading": -67.27296546024304,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99906279489436,
+                45.00388156989131,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 30,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 30",
+            "order": 30,
+            "orientation": {
+              "heading": -86.87777785049215,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99913307314643,
+                45.00402267259869,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          }
+        ],
+        "userId": "",
+        "vehicleProfile": {
+          "key": "612",
+          "label": null
+        },
+        "width": 7
+      }
+    ],
+    "strategy": {
+      "key": "1",
+      "label": "STRATEGY_JUST_ONE_CAN_MANEUVER"
+    },
+    "stroke": {
+      "color": "#ffffff",
+      "opacity": 80,
+      "thickness": 2
+    },
+    "type": {
+      "key": "7",
+      "label": "TIE_DOWN"
+    },
+    "userId": "",
+    "zones": []
+  },
+  {
+    "boundary": {
+      "coordinates": [
+        [
+          44.99945903933529,
+          45.00332550511642,
+          0
+        ],
+        [
+          44.99911887266023,
+          45.002757818727666,
+          0
+        ],
+        [
+          44.99966548302819,
+          45.00232032782696,
+          0
+        ],
+        [
+          45.000748038334706,
+          45.00230428821711,
+          0
+        ],
+        [
+          45.00152893487036,
+          45.0025867794686,
+          0
+        ],
+        [
+          45.001512436412774,
+          45.003073349048805,
+          0
+        ],
+        [
+          45.001004054812675,
+          45.00373397836709,
+          0
+        ],
+        [
+          45.00070385493505,
+          45.0033844840034,
+          0
+        ],
+        [
+          45.00074399505534,
+          45.002982364936145,
+          0
+        ],
+        [
+          45.000564974663604,
+          45.0027043081683,
+          0
+        ],
+        [
+          45.00014267928281,
+          45.002789829862586,
+          0
+        ],
+        [
+          45.00034993323142,
+          45.003271788148986,
+          0
+        ],
+        [
+          45.00009995162754,
+          45.00338989270246,
+          0
+        ],
+        [
+          45.00022532030086,
+          45.00376095528771,
+          0
+        ],
+        [
+          45.00105606994009,
+          45.003922566465995,
+          0
+        ],
+        [
+          45.00172260276606,
+          45.00350260417264,
+          0
+        ],
+        [
+          45.00191228795201,
+          45.00287526324876,
+          0
+        ],
+        [
+          45.00252240895943,
+          45.00280035495901,
+          0
+        ],
+        [
+          45.00271139465722,
+          45.00322334004896,
+          0
+        ],
+        [
+          45.00231168699137,
+          45.003971012836196,
+          0
+        ],
+        [
+          45.0016142162185,
+          45.00453870585371,
+          0
+        ],
+        [
+          45.00066670175213,
+          45.00450085398301,
+          0
+        ],
+        [
+          44.99990266840158,
+          45.00432228776915,
+          0
+        ],
+        [
+          44.9993094027625,
+          45.003868767683876,
+          0
+        ],
+        [
+          44.999215824473076,
+          45.003470521985136,
+          0
+        ]
+      ],
+      "type": "MultiPoint"
+    },
+    "creation": "2023-05-27T19:02:51.306724",
+    "fill": {
+      "color": "#2573a6",
+      "opacity": 80
+    },
+    "finishingEvent": {
+      "key": "1",
+      "label": "WORKFLOW_MANEUVER_FINISHED"
+    },
+    "id": 2,
+    "modified": "2023-05-27T19:02:51.306724",
+    "name": "Workplace 2",
+    "pattern": {
+      "color": "#ffffff",
+      "opacity": 0
+    },
+    "spotGroups": [
+      {
+        "columnDistance": 1,
+        "creation": "2023-05-27T19:02:51.306724",
+        "fill": {
+          "color": "#FFFFFF",
+          "opacity": 90
+        },
+        "gridSequence": 1,
+        "gridType": {
+          "key": "1",
+          "label": "SQUARED"
+        },
+        "id": 2,
+        "label": {
+          "color": "#C4C4C4",
+          "opacity": 90
+        },
+        "length": 14,
+        "maneuverStrategy": {
+          "key": "1",
+          "label": "SPOTSTRATEGY_REVERSE_MANEUVER"
+        },
+        "maxSteeringAngle": 36,
+        "modified": "2023-05-27T19:02:51.306724",
+        "name": "Spot Group 1",
+        "order": 1,
+        "orderOrientation": {
+          "key": "2",
+          "label": "COUNTER_CLOCKWISE"
+        },
+        "parkOrientation": {
+          "key": "2",
+          "label": "BACK_TO_BACK"
+        },
+        "rowDistance": 1,
+        "spotHeading": 0,
+        "spotPadding": {
+          "back": 2.2,
+          "left": 2.2,
+          "right": 2.2,
+          "top": 2.2
+        },
+        "spotWorkflow": {
+          "key": "5",
+          "label": "EDGE"
+        },
+        "spots": [
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 32,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 32",
+            "order": 1,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99957226321525,
+                45.00329135688304,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 33,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 33",
+            "order": 2,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99951073195427,
+                45.00318867142469,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 34,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 34",
+            "order": 3,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99944920091311,
+                45.00308598593133,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 35,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 35",
+            "order": 4,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.9993876700918,
+                45.002983300402974,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 36,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 36",
+            "order": 5,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999326139490314,
+                45.0028806148396,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 37,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 37",
+            "order": 6,
+            "orientation": {
+              "heading": 113.03117619209391,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999264609108664,
+                45.002777929241226,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 38,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 38",
+            "order": 7,
+            "orientation": {
+              "heading": 48.445652218836415,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99941285763955,
+                45.00265410797393,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 39,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 39",
+            "order": 8,
+            "orientation": {
+              "heading": 48.445652218836415,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99951718191324,
+                45.00257061003323,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 40,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 40",
+            "order": 9,
+            "orientation": {
+              "heading": 48.445652218836415,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999621505883866,
+                45.00248711199601,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 41,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 41",
+            "order": 10,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99982655829178,
+                45.002405244672595,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 42,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 42",
+            "order": 11,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999983797529296,
+                45.00240291537041,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 43,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 43",
+            "order": 12,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000141036754066,
+                45.00240058585173,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 44,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 44",
+            "order": 13,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000298275966095,
+                45.002398256116564,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 45,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 45",
+            "order": 14,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00045551516538,
+                45.002395926164915,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 46,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 46",
+            "order": 15,
+            "orientation": {
+              "heading": 1.1960129756685518,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00061275435191,
+                45.00239359599677,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 47,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 47",
+            "order": 16,
+            "orientation": {
+              "heading": -27.017265397006184,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00082209253846,
+                45.002429053598355,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 48,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 48",
+            "order": 17,
+            "orientation": {
+              "heading": -27.017265397006184,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00096220303968,
+                45.00247973920515,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 49,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 49",
+            "order": 18,
+            "orientation": {
+              "heading": -27.017265397006184,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00110231378797,
+                45.0025304246396,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 50,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 50",
+            "order": 19,
+            "orientation": {
+              "heading": -27.017265397006184,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00124242478334,
+                45.002581109901705,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 51,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 51",
+            "order": 20,
+            "orientation": {
+              "heading": -27.017265397006184,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0013825360258,
+                45.002631794991466,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 52,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 52",
+            "order": 21,
+            "orientation": {
+              "heading": 268.6219663008275,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001398926071474,
+                45.00279158187529,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 53,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 53",
+            "order": 22,
+            "orientation": {
+              "heading": 268.6219663008275,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00139514376906,
+                45.002903128795175,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 54,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 54",
+            "order": 23,
+            "orientation": {
+              "heading": 268.6219663008275,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001391361451965,
+                45.003014675712755,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 55,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 55",
+            "order": 24,
+            "orientation": {
+              "heading": 241.36789420028936,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0013132853509,
+                45.00314999339259,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 56,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 56",
+            "order": 25,
+            "orientation": {
+              "heading": 241.36789420028936,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0012379211766,
+                45.00324792798649,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 57,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 57",
+            "order": 26,
+            "orientation": {
+              "heading": 241.36789420028936,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001162556745506,
+                45.00334586252895,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 58,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 58",
+            "order": 27,
+            "orientation": {
+              "heading": 241.36789420028936,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001087192057604,
+                45.00344379702001,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 59,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 59",
+            "order": 28,
+            "orientation": {
+              "heading": 241.36789420028936,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0010118271129,
+                45.00354173145965,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 60,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 60",
+            "order": 29,
+            "orientation": {
+              "heading": 121.35745770972545,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00084510703913,
+                45.00338119758088,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 61,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 61",
+            "order": 30,
+            "orientation": {
+              "heading": 85.94915701359957,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000843153891246,
+                45.00322459674222,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 62,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 62",
+            "order": 31,
+            "orientation": {
+              "heading": 85.94915701359957,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00085426405844,
+                45.003113296307504,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 63,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 63",
+            "order": 32,
+            "orientation": {
+              "heading": 85.94915701359957,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0008653741826,
+                45.00300199586954,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 64,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 64",
+            "order": 33,
+            "orientation": {
+              "heading": 114.54935061823525,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00080057163654,
+                45.00286015897621,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 65,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 65",
+            "order": 34,
+            "orientation": {
+              "heading": 114.54935061823525,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00073522782569,
+                45.00275866607538,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 66,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 66",
+            "order": 35,
+            "orientation": {
+              "heading": 195.93171446968756,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00053120426411,
+                45.00262037704872,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 67,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 67",
+            "order": 36,
+            "orientation": {
+              "heading": 195.93171446968756,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00037997105459,
+                45.00265100449159,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 68,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 68",
+            "order": 37,
+            "orientation": {
+              "heading": 195.93171446968756,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00022873768392,
+                45.002681631734035,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 69,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 69",
+            "order": 38,
+            "orientation": {
+              "heading": -73.034081928987,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00002500435216,
+                45.00281529943684,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 70,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 70",
+            "order": 39,
+            "orientation": {
+              "heading": -73.034081928987,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00007089761697,
+                45.002922022524416,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 71,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 71",
+            "order": 40,
+            "orientation": {
+              "heading": -73.034081928987,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0001167910522,
+                45.00302874559155,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 72,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 72",
+            "order": 41,
+            "orientation": {
+              "heading": -73.034081928987,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00016268465784,
+                45.00313546863823,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 73,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 73",
+            "order": 42,
+            "orientation": {
+              "heading": -73.034081928987,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000208578433885,
+                45.00324219166447,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 74,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 74",
+            "order": 43,
+            "orientation": {
+              "heading": -76.52078758664061,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99998030993535,
+                45.003410237824085,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 75,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 75",
+            "order": 44,
+            "orientation": {
+              "heading": -76.52078758664061,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00001696993163,
+                45.00351874349834,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 76,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 76",
+            "order": 45,
+            "orientation": {
+              "heading": -76.52078758664061,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00005363006643,
+                45.0036272491591,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 77,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 77",
+            "order": 46,
+            "orientation": {
+              "heading": -76.52078758664061,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00009029033957,
+                45.00373575480586,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 78,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 78",
+            "order": 47,
+            "orientation": {
+              "heading": -15.334497651467899,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00027840891294,
+                45.003861788992644,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 79,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 79",
+            "order": 48,
+            "orientation": {
+              "heading": -15.334497651467899,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00043008719818,
+                45.0038912963094,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 80,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 80",
+            "order": 49,
+            "orientation": {
+              "heading": -15.334497651467899,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00058176563915,
+                45.00392080342454,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 81,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 81",
+            "order": 50,
+            "orientation": {
+              "heading": -15.334497651467899,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000733444235834,
+                45.0039503103381,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 82,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 82",
+            "order": 51,
+            "orientation": {
+              "heading": -15.334497651467899,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00088512298825,
+                45.003979817050045,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 83,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 83",
+            "order": 52,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00113776790338,
+                45.003987828277396,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 84,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 84",
+            "order": 53,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00125536406167,
+                45.003913735289075,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 85,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 85",
+            "order": 54,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0013729599168,
+                45.00383964217869,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 86,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 86",
+            "order": 55,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00149055546877,
+                45.00376554894626,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 87,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 87",
+            "order": 56,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00160815071757,
+                45.00369145559179,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 88,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 88",
+            "order": 57,
+            "orientation": {
+              "heading": 41.60864769411583,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00172574566322,
+                45.00361736211526,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 89,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 89",
+            "order": 58,
+            "orientation": {
+              "heading": 77.89278390743291,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00185353814034,
+                45.00348571846513,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 90,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 90",
+            "order": 59,
+            "orientation": {
+              "heading": 77.89278390743291,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001886525492964,
+                45.003376621152896,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 91,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 91",
+            "order": 60,
+            "orientation": {
+              "heading": 77.89278390743291,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001919512720455,
+                45.00326752382878,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 92,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 92",
+            "order": 61,
+            "orientation": {
+              "heading": 77.89278390743291,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001952499822686,
+                45.0031584264932,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 93,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 93",
+            "order": 62,
+            "orientation": {
+              "heading": 77.89278390743291,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001985486799704,
+                45.003049329146,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 94,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 94",
+            "order": 63,
+            "orientation": {
+              "heading": 9.817985139316193,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.002183220967254,
+                45.00293058071123,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 95,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 95",
+            "order": 64,
+            "orientation": {
+              "heading": 9.817985139316193,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00233819240201,
+                45.00291155391629,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 96,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 96",
+            "order": 65,
+            "orientation": {
+              "heading": -72.41268159134674,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00249902477708,
+                45.003036882512234,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": true,
+            "id": 97,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 97",
+            "order": 66,
+            "orientation": {
+              "heading": -72.41268159134674,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00254654715426,
+                45.00314324616694,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 98,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 98",
+            "order": 67,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00253563937937,
+                45.00330597005793,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 99,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 99",
+            "order": 68,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00247986601745,
+                45.00341029773679,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 100,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 100",
+            "order": 69,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00242409245308,
+                45.0035146253865,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 101,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 101",
+            "order": 70,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00236831868626,
+                45.003618953007056,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 102,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 102",
+            "order": 71,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00231254471698,
+                45.00372328059846,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 103,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 103",
+            "order": 72,
+            "orientation": {
+              "heading": 249.22986534892783,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00225677054524,
+                45.003827608160705,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 104,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 104",
+            "order": 73,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00216893718879,
+                45.00395436235921,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 105,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 105",
+            "order": 74,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00206559666914,
+                45.00403847530214,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 106,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 106",
+            "order": 75,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00196225584705,
+                45.00412258815031,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 107,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 107",
+            "order": 76,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001858914722504,
+                45.00420670090373,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 108,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 108",
+            "order": 77,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00175557329552,
+                45.0042908135624,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 109,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 109",
+            "order": 78,
+            "orientation": {
+              "heading": 228.92426671007917,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00165223156609,
+                45.00437492612632,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 110,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 110",
+            "order": 79,
+            "orientation": {
+              "heading": 176.77738020354383,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001418512751606,
+                45.00444346645795,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 111,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 111",
+            "order": 80,
+            "orientation": {
+              "heading": 176.77738020354383,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00126148241341,
+                45.00443719357363,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 112,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 112",
+            "order": 81,
+            "orientation": {
+              "heading": 176.77738020354383,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.001104452109495,
+                45.004430920473396,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 113,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 113",
+            "order": 82,
+            "orientation": {
+              "heading": 176.77738020354383,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.000947421839854,
+                45.00442464715723,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 114,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 114",
+            "order": 83,
+            "orientation": {
+              "heading": 176.77738020354383,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00079039160449,
+                45.004418373625164,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 115,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 115",
+            "order": 84,
+            "orientation": {
+              "heading": 161.7663860099402,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00060279895709,
+                45.004394021083186,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 116,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 116",
+            "order": 85,
+            "orientation": {
+              "heading": 161.7663860099402,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00045341734323,
+                45.00435910860363,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 117,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 117",
+            "order": 86,
+            "orientation": {
+              "heading": 161.7663860099402,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00030403591084,
+                45.00432419592849,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 118,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 118",
+            "order": 87,
+            "orientation": {
+              "heading": 161.7663860099402,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.0001546546599,
+                45.00428928305773,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 119,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 119",
+            "order": 88,
+            "orientation": {
+              "heading": 161.7663860099402,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                45.00000527359043,
+                45.00425436999138,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 120,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 120",
+            "order": 89,
+            "orientation": {
+              "heading": 132.86280611734577,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999850486490814,
+                45.004154085431274,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 121,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 121",
+            "order": 90,
+            "orientation": {
+              "heading": 132.86280611734577,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99974349903899,
+                45.004072299433226,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 122,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 122",
+            "order": 91,
+            "orientation": {
+              "heading": 132.86280611734577,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99963651189163,
+                45.003990513333775,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 123,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 123",
+            "order": 92,
+            "orientation": {
+              "heading": 132.86280611734577,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.999529525048715,
+                45.003908727132924,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 124,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 124",
+            "order": 93,
+            "orientation": {
+              "heading": 99.4643506325653,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.9994130318562,
+                45.003778970610334,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 125,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 125",
+            "order": 94,
+            "orientation": {
+              "heading": 99.4643506325653,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99938717022306,
+                45.00366891023409,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          },
+          {
+            "creation": "2023-05-27T19:02:51.306724",
+            "enabled": false,
+            "id": 126,
+            "modified": "2023-05-27T19:02:51.306724",
+            "name": "Spot 126",
+            "order": 95,
+            "orientation": {
+              "heading": 99.4643506325653,
+              "pitch": 0,
+              "roll": 0
+            },
+            "position": {
+              "coordinates": [
+                44.99936130868895,
+                45.003558849849846,
+                0
+              ],
+              "type": "Point"
+            },
+            "selectable": true,
+            "userId": ""
+          }
+        ],
+        "userId": "",
+        "vehicleProfile": {
+          "key": "612",
+          "label": null
+        },
+        "width": 7
+      }
+    ],
+    "strategy": {
+      "key": "1",
+      "label": "STRATEGY_JUST_ONE_CAN_MANEUVER"
+    },
+    "stroke": {
+      "color": "#ffffff",
+      "opacity": 80,
+      "thickness": 2
+    },
+    "type": {
+      "key": "4",
+      "label": "DUMP"
+    },
+    "userId": "",
+    "zones": []
+  }
+]
