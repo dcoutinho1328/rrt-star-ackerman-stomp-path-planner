@@ -1,0 +1,7 @@
+Total execution time: 0.18849635124206543 
+Average RRT Execution Time: 0.0029938220977783203 
+Average Total time after stomp: 0.004988431930541992 
+Average Total time after post processing 0.0009970664978027344 
+Average Total time after polynom generator 0.0009970664978027344 
+Nodes in the three 14 
+Number of retries 0
