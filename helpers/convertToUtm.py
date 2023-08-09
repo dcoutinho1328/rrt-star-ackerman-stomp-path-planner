@@ -6,8 +6,6 @@ from math import pi, sin, cos, radians, atan2
 
 
 def get_heading(c, h):
-    # h = radians(head)
-
     ip = [c[0] + (10 * cos(h) / 2), c[1] + (10 * sin(h) / 2)]
 
     return ip
@@ -150,10 +148,3 @@ for p in sj2:
     counter += 1
 
 plt.show()
-
-
-# # Exemplo de uso
-# latitude = -22.9068
-# longitude = -43.1729
-
-# easting, northing = lat_long_to_utm(latitude, longitude)
