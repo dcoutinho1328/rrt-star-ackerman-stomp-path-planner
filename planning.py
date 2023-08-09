@@ -81,10 +81,10 @@ if __name__ == "__main__":
     vehicle_size = int(
         input(
             """Set vehicle size: 
-                             1 - Small (2x3)
-                             2 - Medium (4x8)
-                             3 - Large (7x14)
-                             """
+    1 - Small (2x3)
+    2 - Medium (4x8)
+    3 - Large (7x14)
+"""
         )
     )
 
